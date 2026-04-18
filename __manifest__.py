@@ -14,7 +14,7 @@
     'website': "https://andyut.blogspot.com/",
     'image': ['images/main_screenshot.png'],
     'category': 'External Integration',
-    'version': '18.1',
+    'version': '18.1.0',
     'application':True,
     'license': 'LGPL-3',
  
