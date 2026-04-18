@@ -3,7 +3,7 @@
     'name': "AU - UDF Multi Company",
 
     'summary': """
-        Manage multi-company settings and UDF company configuration.
+        Manage multi-company settings and UDF company configuration. 
     """,
 
     'description': """

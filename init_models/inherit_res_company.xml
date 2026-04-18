@@ -7,7 +7,7 @@
             <field name="arch" type="xml"> 
                    <xpath expr="//page[1]" position="after">
                         <page string="SAP DB Connection">
-                            <group string="SAP B1 DB Setting">
+                            <group string=" B1 DB Setting">
                                 <field name="company_bp_code"/>
                                 <field name="code_base"/> 
                                 <field name="server"/>
@@ -15,7 +15,7 @@
                                 <field name="db_usr"/>
                                 <field name="db_pass" widget="password"/> 
                             </group> 
-                            <group string="SAP WEB DB Setting"> 
+                            <group string=" WEB DB Setting"> 
                                 <field name="server2"/>
                                 <field name="db_name2"/>
                                 <field name="db_usr2"/>
