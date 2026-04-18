@@ -1,0 +1,57 @@
+<odoo>
+    <data>
+        <record id="cnw_res_company_inherit" model="ir.ui.view">
+            <field name="name">cnw.res.company.inherit</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml"> 
+                   <xpath expr="//page[1]" position="after">
+                        <page string="SAP DB Connection">
+                            <group string="SAP B1 DB Setting">
+                                <field name="company_bp_code"/>
+                                <field name="code_base"/> 
+                                <field name="server"/>
+                                <field name="db_name"/>
+                                <field name="db_usr"/>
+                                <field name="db_pass" widget="password"/> 
+                            </group> 
+                            <group string="SAP WEB DB Setting"> 
+                                <field name="server2"/>
+                                <field name="db_name2"/>
+                                <field name="db_usr2"/>
+                                <field name="db_pass2" widget="password"/>           
+                                <field name="sapweb"/>                 
+                            </group>  
+                            <group string="PostGreSQL DB Setting"> 
+                                <field name="server3"/>
+                                <field name="db_name3"/>
+                                <field name="db_usr3"/>
+                                <field name="db_pass3" widget="password"/>       
+                            </group>                               
+                        </page>
+
+                        <page string="ERP Setting">
+                        <group>
+                            <field name="sapuser"/>
+                            <field name="sappassword" widget="password"/>
+                            <field name="sapsl"/> 
+                            <field name="webapi"/>
+                        </group>
+                        </page>
+                        
+                        <page string="Accounting Setting">
+                        <group>
+                            <field name="company_code"/>
+                            <field name="loc"/>
+                            <field name="kwitansi"/> 
+                            <field name="rek"/>
+                            <field name="logo"/>
+                        </group>
+
+                        </page>
+                    </xpath>
+               
+            </field>
+        </record>
+    </data>
+</odoo>  
