@@ -12,7 +12,7 @@
 
     'author': "Andy Utomo",
     'website': "https://andyut.blogspot.com/",
-    'images': ['images/cover.png'],
+    'images': ['static/description/cover.png'],
     'category': 'External Integration',
     'version': '18.1.0',
     'application':True,
