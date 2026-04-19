@@ -46,4 +46,4 @@ class IuCompanyGroup(models.Model):
 	rek         = fields.Char("Bank Account Number")
 	loc         = fields.Char("Location")
 	kwitansi	= fields.Char("Receipt Signature")
-	logo    	= fields.Char("Logo URL")
+	urllogo    	= fields.Char("Logo URL")

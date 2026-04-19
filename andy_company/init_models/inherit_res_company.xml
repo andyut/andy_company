@@ -45,7 +45,7 @@
                             <field name="loc"/>
                             <field name="kwitansi"/> 
                             <field name="rek"/>
-                            <field name="logo"/>
+                            <field name="urllogo"/>
                         </group>
 
                         </page>
