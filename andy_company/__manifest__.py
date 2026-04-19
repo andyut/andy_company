@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "External Database Settingfor Multi Company",
+    'name': "External Database Setting for Multi Company",
 
     'summary': """
         Manage multi-company database settings and UDF company configuration. 
