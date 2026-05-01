@@ -7,20 +7,17 @@
             <field name="arch" type="xml"> 
                    <xpath expr="//page[1]" position="after">
                         <page string="SAP DB Connection">
-                            <group string=" B1 DB Setting">
-                                <field name="company_bp_code"/>
-                                <field name="code_base"/> 
+                            <group string=" B1 DB MSSQL Setting">
                                 <field name="server"/>
                                 <field name="db_name"/>
                                 <field name="db_usr"/>
                                 <field name="db_pass" widget="password"/> 
                             </group> 
-                            <group string=" WEB DB Setting"> 
+                            <group string=" WEB DB MSSQL Setting"> 
                                 <field name="server2"/>
                                 <field name="db_name2"/>
                                 <field name="db_usr2"/>
-                                <field name="db_pass2" widget="password"/>           
-                                <field name="sapweb"/>                 
+                                <field name="db_pass2" widget="password"/>       
                             </group>  
                             <group string="PostGreSQL DB Setting"> 
                                 <field name="server3"/>
@@ -30,25 +27,20 @@
                             </group>                               
                         </page>
 
-                        <page string="ERP Setting">
+                        <page string="B1 Service Setting">
                         <group>
                             <field name="sapuser"/>
                             <field name="sappassword" widget="password"/>
                             <field name="sapsl"/> 
+                        </group>
+                        </page>
+                        <page string="Web Application Setting (Others)">
+    
+                            <field name="sapweb"/>                 
                             <field name="webapi"/>
-                        </group>
-                        </page>
-                        
-                        <page string="Accounting Setting">
-                        <group>
-                            <field name="company_code"/>
-                            <field name="loc"/>
-                            <field name="kwitansi"/> 
-                            <field name="rek"/>
                             <field name="urllogo"/>
-                        </group>
-
                         </page>
+ 
                     </xpath>
                
             </field>

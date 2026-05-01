@@ -4,13 +4,15 @@ from odoo import models, fields, api
 
 class IuCompanyGroup(models.Model):
 	_inherit="res.company"
-	company_code = fields.Char("Company Internal Code")
-	company_bp_code = fields.Char("Company BP Code")
 
+## Optional Code for future use (Multi Company)
+	company_code = fields.Char("Company Internal Code")
+	company_bp_code = fields.Char("Company Partner Code")
+
+	code_base   = fields.Char("Company Code Base (Financial Report)")
 	
  
 
-	code_base   = fields.Char("Company Code Base")
 
 # DB B1
 	server      = fields.Char("IP / URL Server")
@@ -32,18 +34,13 @@ class IuCompanyGroup(models.Model):
 
 
 # WEB APPLICATION URL
-	sapweb      = fields.Char("  WEB URL  ")
+	sapweb      = fields.Char("  WEB URL  (if Any)  ")
+	webapi	 	= fields.Char("WEB FastAPI-Jasper API URL")
 
 # Service Layer / Web API
 	sapuser		= fields.Char("SAP User")
 	sappassword	= fields.Char("SAP PAssword")
 	sapsl 		= fields.Char("SAP Service Layer URL")
-	webapi	 	= fields.Char("WEB FastAPI-Jasper API URL")
 	 
 
-
-# Other Information 
-	rek         = fields.Char("Bank Account Number")
-	loc         = fields.Char("Location")
-	kwitansi	= fields.Char("Receipt Signature")
-	urllogo    	= fields.Char("Logo URL")
+ 
