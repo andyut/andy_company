@@ -36,7 +36,7 @@ class IuCompanyGroup(models.Model):
 # WEB APPLICATION URL
 	sapweb      = fields.Char("  WEB URL  (if Any)  ")
 	webapi	 	= fields.Char("WEB FastAPI-Jasper API URL")
-
+	urllogo 	= fields.Char("URL Logo (if Any)")
 # Service Layer / Web API
 	sapuser		= fields.Char("SAP User")
 	sappassword	= fields.Char("SAP PAssword")
